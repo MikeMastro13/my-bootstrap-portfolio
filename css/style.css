@@ -1,0 +1,70 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Navbar */
+.navbar {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #39393A;
+}
+
+.logo {
+    background-color: #7BDFF2;
+    padding: 20px;
+}
+
+.right-align {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        text-align: center;
+    }
+    
+    .nav-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-container {
+        padding: 0;
+    }
+
+    .logo, .right-align {
+        width: 100vw;   
+    }
+}
+
+/* About Me */
+.about-area {
+    display: flex;
+    margin-top: 40px;
+}
+.about-picture {
+    margin-right: 20px;
+    width: 200px;
+    object-fit: contain;
+    align-self: flex-start;
+
+}
+
+.about-paragraph {
+    flex: 1 1 auto;
+}
+
+/* Footer */
+.footer-area {
+    background-color: #39393A;
+    border-top: 10px solid #7BDFF2;
+    bottom: 0;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}

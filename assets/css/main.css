@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900&display=swap");
+body {
+  background-color: #0D1317;
+  color: #DBDBDB;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+}
+.navbar .navbar-brand .brand-m {
+  color: #f06529;
+}
+.navbar .navbar-brand .brand-i {
+  color: #2965f1;
+}
+.navbar .navbar-brand .brand-k {
+  color: #f0db4f;
+}
+.navbar .navbar-brand .brand-e {
+  color: #cc6699;
+}
+.navbar .navbar-nav {
+  font-family: "Open Sans", sans-serif;
+}
+.navbar .navbar-nav .nav-link {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #DBDBDB;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.home-hero {
+  min-height: 84vh;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+.home-hero .home-hero-container {
+  height: inherit;
+}
+.home-hero .home-hero-intro {
+  margin: 0;
+  color: #969595;
+  font-size: 14px;
+}
+.home-hero .home-hero-title {
+  margin-bottom: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.home-hero .home-hero-headline-box {
+  padding-right: 75px;
+  background-color: #0D1317;
+}
+.home-hero .home-hero-headline {
+  margin-top: 290px;
+  margin-bottom: 290px;
+}
+.home-hero .home-hero-subtitle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 150px;
+  border-top: 1px solid #2965f1;
+  border-bottom: 1px solid #2965f1;
+  color: #969595;
+  font-size: 14px;
+}
+.home-hero .home-hero-socials {
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  width: 30%;
+}
+.home-hero .home-hero-socials .list-group-item {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 0;
+}
+.home-hero .home-hero-btn {
+  padding: 10px 60px;
+  border-radius: 20px;
+  border-color: #2965f1;
+  background-color: transparent;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.home-hero .home-hero-btn:hover {
+  border-color: #2965f1;
+}
+
+.vanta-canvas {
+  left: 450px !important;
+}
+
+.portfolio-card-img {
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

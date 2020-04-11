@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700,900&display=swap');
+
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+$color-primary: #0D1317;
+$color-secondary: #DBDBDB;
+$color-primary-text: #969595;
+$color-secondary-text: #2965f1;
+
+$color-html: #f06529;
+$color-css: #2965f1;
+$color-js: #f0db4f;
+$color-scss: #cc6699;
+
+@mixin padding($position, $amount) {
+    @if $position == 'top' {
+        padding-top: $amount;
+    }
+    
+    @if $position == 'right' {
+        padding-right: $amount;
+    }
+    
+    @if $position == 'bottom' {
+        padding-bottom: $amount;
+    }
+
+    @if $position == 'left' {
+        padding-left: $amount;
+    }
+
+    @if $position == 'x' {
+        padding-left: $amount;
+        padding-right: $amount;
+    }
+
+    @if $position == 'y' {
+        padding-top: $amount;
+        padding-bottom: $amount;
+    }
+}
+
+@mixin margin($position, $amount) {
+    @if $position == 'top' {
+        margin-top: $amount;
+    }
+    
+    @if $position == 'right' {
+        margin-right: $amount;
+    }
+    
+    @if $position == 'bottom' {
+        margin-bottom: $amount;
+    }
+
+    @if $position == 'left' {
+        margin-left: $amount;
+    }
+
+    @if $position == 'x' {
+        margin-left: $amount;
+        margin-right: $amount;
+    }
+
+    @if $position == 'y' {
+        margin-top: $amount;
+        margin-bottom: $amount;
+    }
+}
+
+body {
+    background-color: $color-primary;
+    color: $color-secondary;
+}
+
+.navbar {
+    .navbar-brand {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: $font-primary;
+
+        .brand-m {
+            color: $color-html;
+        }
+
+        .brand-i {
+            color: $color-css;
+        }
+
+        .brand-k {
+            color: $color-js;
+        }
+
+        .brand-e {
+            color: $color-scss;
+        }
+    }
+
+    .navbar-nav {
+        font-family: $font-secondary;
+
+        .nav-link {
+            @include padding(x, 30px);
+            color: $color-secondary;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+    
+}
+
+.home-hero {
+    min-height: 84vh;
+    overflow: hidden;
+    font-family: $font-secondary;
+
+    .home-hero-container {
+        height: inherit;
+    }
+
+    .home-hero-intro {
+        margin: 0;
+        color: $color-primary-text;
+        font-size: 14px;
+    }
+
+    .home-hero-title {
+        @include margin(bottom, 25px);
+        font-family: $font-primary;
+        font-weight: 900;
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+
+    .home-hero-headline-box {
+        @include padding(right, 75px);
+        background-color: #0D1317;
+    }
+
+    .home-hero-headline {
+        @include margin(y, 290px);
+    }
+    
+    .home-hero-subtitle {
+        @include padding(y, 10px);
+        @include margin(right, 150px);
+        border-top: 1px solid $color-secondary-text;
+        border-bottom: 1px solid $color-secondary-text;
+        color: $color-primary-text;
+        font-size: 14px;
+    }
+
+    .home-hero-socials {
+        @include margin(left, 10px);
+        @include padding(top, 5px);
+        @include padding(bottom, 30px);
+        justify-content: space-between;
+        width: 30%;
+
+        .list-group-item {
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            padding: 0;
+        }
+    }
+
+    .home-hero-btn {
+        padding: 10px 60px;
+        border-radius: 20px;
+        border-color: $color-css;
+        background-color: transparent;
+        font-size: 12px;
+        letter-spacing: 2px;
+
+        &:hover {
+            border-color: $color-css;
+        }
+    }
+}
+
+.vanta-canvas {
+    left: 450px !important;
+}
+
+.portfolio-card-img{
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+}

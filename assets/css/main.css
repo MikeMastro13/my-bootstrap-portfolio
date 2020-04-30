@@ -83,6 +83,16 @@ body {
   font-size: 20px;
   padding: 0;
 }
+.home-hero .home-hero-socials .list-group-item .social-link {
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 2px;
+  color: #fff;
+}
+.home-hero .home-hero-socials .list-group-item .social-link:hover {
+  background-color: #DBDBDB;
+  color: #0D1317;
+}
 .home-hero .home-hero-btn {
   padding: 10px 60px;
   border-radius: 20px;
@@ -103,7 +113,6 @@ body {
   max-width: 300px;
   max-height: 300px;
   overflow: hidden;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

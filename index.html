@@ -47,9 +47,9 @@
                             <h2 class="home-hero-title">Mike Mastromatteo</h2>
                             <p class="home-hero-subtitle" id="home-hero-subtitle">Web Developer / Game Developer</p>
                             <ul class="home-hero-socials list-group list-group-horizontal">
-                                <li class="list-group-item"><i class="fab fa-github"></i></li>
-                                <li class="list-group-item"><i class="fab fa-linkedin-in"></i></li>
-                                <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                                <li class="list-group-item"><a class="social-link" href="https://github.com/MikeMastro13" target="_blank"><i class="fab fa-github"></i></a></li>
+                                <li class="list-group-item"><a class="social-link" href="https://www.linkedin.com/in/michael-mastromatteo-67a55b10b/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <!-- <li class="list-group-item"><i class="fab fa-twitter"></i></li> -->
                             </ul>
                             <button type="button" class="home-hero-btn btn btn-dark" id="portfolio-btn">View my Portfolio</button>
                         </div>
@@ -69,43 +69,5 @@
     <script src="three.r95.min.js"></script>
     <script src="vanta.net.min.js"></script>
     <script src="script.js"></script>
-    <script>
-    const colorHtml = 0xf06529;
-    const colorCss = 0x2965f1;
-    const colorJs = 0xf0db4f;
-    const colorScss = 0xcc6699;
-
-    const colorOptions = [colorHtml, colorCss, colorJs, colorScss];
-    const colorHexOptions = ['#f06529', '#2965f1', '#f0db4f', '#cc6699'];
-
-    const portfolioBtn = document.getElementById('portfolio-btn');
-    const heroSubtitle = document.getElementById('home-hero-subtitle');
-
-    // Vanta Effectszz
-    const effect = VANTA.NET({
-        el: "#vanta-area",
-        mouseControls: true,
-        touchControls: true,
-        minHeight: 400.00,
-        minWidth: 400.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        backgroundColor: 0x0D1317,
-        color: 0x2965f1,
-        maxDistance: 20.00,
-        showDots: false //Find a way to make this work
-    });
-
-    setInterval(() => {
-        let colorChoice = Math.floor(Math.random() * colorOptions.length);
-        effect.setOptions({
-            color: colorOptions[colorChoice]
-        })
-        portfolioBtn.style.borderColor = colorHexOptions[colorChoice];
-        heroSubtitle.style.borderColor = colorHexOptions[colorChoice];
-
-    }, 5000);
-
-</script>
 </body>
 </html>
